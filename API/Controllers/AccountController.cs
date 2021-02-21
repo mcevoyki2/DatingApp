@@ -7,7 +7,6 @@ using API.Interfaces;
 using System.Linq;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
-using System.Collections.Generic;
 namespace API.Controllers
 
 {

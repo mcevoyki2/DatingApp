@@ -9,7 +9,6 @@ import {
 import { Observable, throwError } from 'rxjs';
 import { NavigationExtras, Router } from '@angular/router';
 import { catchError } from 'rxjs/operators';
-import { ThrowStmt } from '@angular/compiler';
 
 @Injectable()
 export class ErrorInterceptor implements HttpInterceptor {
@@ -54,6 +53,6 @@ export class ErrorInterceptor implements HttpInterceptor {
         }
         return throwError(error);
       })
-    )
+    );
   }
 }
